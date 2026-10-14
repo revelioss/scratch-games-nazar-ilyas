@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игры Scratch — Назар и Ильяс</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
+      background: linear-gradient(90deg, #4cbf56, #00d4ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      opacity: 0.8;
+      font-size: 1.1rem;
+    }
+    .games {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .game-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .game-header {
+      padding: 16px 20px;
+      background: rgba(0,0,0,0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .game-header h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+    .game-header a {
+      color: #4cbf56;
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 6px 14px;
+      border: 1px solid #4cbf56;
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .game-header a:hover {
+      background: #4cbf56;
+      color: #000;
+    }
+    .game-frame-wrapper {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%; /* 4:3 ratio typical for Scratch */
+      background: #000;
+    }
+    .game-frame-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+    @media (min-width: 900px) {
+      .games {
+        gap: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Игры на Scratch</h1>
+    <p class="subtitle">Проекты учеников: Назар и Ильяс</p>
+  </header>
+
+  <div class="games">
+    <div class="game-card">
+      <div class="game-header">
+        <h2>1. Игра Назара</h2>
+        <a href="nazar-game.html" target="_blank">Открыть на весь экран</a>
+      </div>
+      <div class="game-frame-wrapper">
+        <iframe src="nazar-game.html" title="Игра Назара" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="game-card">
+      <div class="game-header">
+        <h2>2. Игра Ильяса</h2>
+        <a href="ilyas-game.html" target="_blank">Открыть на весь экран</a>
+      </div>
+      <div class="game-frame-wrapper">
+        <iframe src="ilyas-game.html" title="Игра Ильяса" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Игры упакованы через TurboWarp Packager</p>
+  </footer>
+</body>
+</html>
